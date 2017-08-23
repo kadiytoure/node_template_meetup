@@ -4,6 +4,8 @@ const mustache = require('mustache');
 
 let app = express();
 
+let events = [];
+
 app.get("/template", function(req, resp) {
     resp.render('index', {
         name: 'Toto',
