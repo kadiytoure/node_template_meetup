@@ -1,0 +1,28 @@
+{
+  "name": "node_template_meetup",
+  "version": "0.0.1",
+  "description": "meetup with templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadiytoure/node_template_meetup.git"
+  },
+  "keywords": [
+    "meetup",
+    "templates",
+    "express",
+    "nodejs"
+  ],
+  "author": "kadiy_simplon tourekadiy@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kadiytoure/node_template_meetup/issues"
+  },
+  "homepage": "https://github.com/kadiytoure/node_template_meetup#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
