@@ -4,6 +4,20 @@ const mustache = require('mustache');
 
 let app = express();
 
+app.get("/template", function(req, resp) {
+    resp.render('index', {
+        name: 'Toto',
+        adjective: 'Happy'
+    });
+});
+/*
+app.get("/template", function(req, resp) {
+    let str = mustache.render("Hello {{name}}!!! You are beautiful!", {
+        name: "mimi"
+    })
+    resp.send(str)
+});
+*/
 app.engine("html", function(path, options, callback) {
     fs.readFile(path, function(err, content) {
         if (err) {
