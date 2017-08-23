@@ -1,6 +1,6 @@
 const fs = require('fs');
 const express = require('express');
-//const mustache = require('mustache');
+const mustache = require('mustache');
 
 let app = express();
 
