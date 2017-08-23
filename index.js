@@ -4,6 +4,18 @@ const mustache = require('mustache');
 
 let app = express();
 
+app.engine("html", function(path, options, callback) {
+    fs.readFile(path, function(err, content) {
+        if (err) {
+            console.error("fail to open template:", err);
+            return callback(err);
+        }
+        let str = mustache.render(content.toString(), options);
+        return callback(null, str);
+    })
+});
+app.set('views', './template');
+app.set('view engine', 'html');
 app.use(express.static("public"));
 
 app.listen(80, function() {
