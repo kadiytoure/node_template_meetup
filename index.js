@@ -34,6 +34,6 @@ app.set('views', './template');
 app.set('view engine', 'html');
 app.use(express.static("public"));
 
-app.listen(80, function() {
-    console.log('Server listening on port 80...');
+app.listen(8080, function() {
+    console.log('Server listening on port 8080');
 });
