@@ -6,7 +6,7 @@ let app = express();
 
 let events = [];
 
-app.get("/template", function(req, resp) {
+app.get(["/", "/index.html"], function(req, resp) {
     resp.render('index', {
         name: 'Toto',
         adjective: 'Happy'
